@@ -13,11 +13,11 @@ passport.deserializeUser(function(id, done) {
 });
 
 passport.use('local.signup', new LocalStrategy({
-    nameField: 'name',
     usernameField: 'email',
     passwordField: 'password',
     passReqToCallback: true
-}, function(req, name, email, password, done) {
+}, function(req, email, password, done) {
+    var name = req.body.name;
     req.checkBody('name', 'Invalid email').notEmpty();
     req.checkBody('email', 'Invalid email').notEmpty().isEmail();
     req.checkBody('password', 'Invalid password').notEmpty().isLength({min: 4});
