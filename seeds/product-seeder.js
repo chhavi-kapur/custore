@@ -38,9 +38,34 @@ var products =  [
     new Product({
         imagePath: 'https://image.invaluable.com/housePhotos/Bonhams/57/657557/H22141-L188537792_original.jpg',
         title: 'Magnificent Beardog Skeleton',
-        description: 'The majority of the skeleton is represented by fossil bone elements from two individuals found at the same discovery site. The remaining skeletal elements, including all ribs, both scapulae and most vertebrae have been replaced with modern Ursidae bones of similar size, which have been stained to match the fossil bone. .',
+        description: 'The majority of the skeleton is represented by fossil bone elements from two individuals found at the same discovery site. The remaining skeletal elements, including all ribs, both scapulae and most vertebrae have been replaced with modern Ursidae bones of similar size, which have been stained to match the fossil bone.',
         price: 10000
-    })
+    }),
+
+    new Product({
+        imagePath: 'https://images.boredomfiles.com/wp-content/uploads/sites/11/2017/10/valuable-collectible-3.jpg',
+        title: '1787 Château Lafite',
+        description: 'This isn’t your everyday bottle of 18th century wine. No, this particular bottle was purchased by Thomas Jefferson, who evidently never got around to popping the cork on this Châteaux-of-Bordeaux-produced drink.',
+        price: 16000
+    }),
+
+    new Product({
+        imagePath: 'https://images.boredomfiles.com/wp-content/uploads/sites/11/2017/10/valuable-collectible-8-e1507134313679.jpg',
+        title: 'Treskilling yellow stamp',
+        description: 'Sweden issued a postage stamp series in 1855 that featured the Swedish coat of arms. This Treskilling—or three units of currency—stamp was normally printed as blue-green, but an error caused a handful to be a yellow color instead.',
+        price: 23000
+    }),
+
+    new Product({
+        imagePath: 'https://images.boredomfiles.com/wp-content/uploads/sites/11/2017/10/valuable-collectible-7.jpg',
+        title: 'T-206 Honus Wagner baseball card',
+        description: 'The American Tobacco initially printed as many as 200 of these cards, but stopped production when Wagner either wanted more money or didn’t want to be associated with cigarettes.',
+        price: 12600
+    }),
+
+
+
+
 ];
 
 var done = 0;

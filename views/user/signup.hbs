@@ -26,9 +26,11 @@
     </div>
 </div>
 -->
-<link rel="stylesheet" type="text/css" href="/public/stylesheets/forms.css" media="all"/>
 
-<div class="main">
+<head>
+    <link rel='stylesheet' href='/stylesheets/forms.css' />
+</head>
+
         <section class="signup">
             <div class="container">
                 <div class="signup-content">
@@ -57,15 +59,6 @@
                                 <label for="password"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="password" id="password" placeholder="Password"/>
                             </div>
-                            <!--
-                            <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                            </div>   --> 
-                            <div class="form-group">
-                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to all statements in  <a href="#" class="term-service">the Terms of service</a></label>
-                            </div>
                             <input type="hidden" name="_csrf" value="{{csrfToken}}">
                             <div class="form-group form-button">
                                 <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
@@ -79,7 +72,6 @@
                 </div>
             </div>
         </section>
-</div>
 
 
   <!-- JS -->

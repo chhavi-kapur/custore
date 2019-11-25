@@ -1,3 +1,16 @@
+.thumbnail {
+  height: 430px;
+  border:1px solid black;
+  border-collapse: separate;
+  border-spacing: 15px;
+  padding: 20px;
+}
+
+.caption h3{
+  padding-top: 10px;
+  font-size: 20px;
+}
+
 .thumbnail img {
   max-height: 200px;
   max-width: 200px;
@@ -20,6 +33,16 @@
 .boxy{
   padding: 2.5% 2.5% 0% 2.5%;
 }
+
+.glyphicon {
+  font-size: 20px;
+}
+
+.success-msg{
+  padding: 10px;
+}
+
+
 
 
 

@@ -4,6 +4,7 @@ var Product = require('../models/product');
 var Cart = require('../models/cart');
 var Order = require('../models/order');
 
+
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
@@ -104,6 +105,8 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
       });
 });
 
+
+
 module.exports = router;
 
 function isLoggedIn(req, res, next) {
@@ -114,62 +117,4 @@ function isLoggedIn(req, res, next) {
   res.redirect('/user/signin');
 }
 
-/*
-const connectionString = 'mongodb+srv://myuser:abcd1234@custore-authl.mongodb.net/test?retryWrites=true&w=majority';
 
-const mongoose = require('mongoose')
-const userSchema = require('./userSchema.js')
-const User = mongoose.model('user', userSchema, 'user')
-
-async function createUser(username) {
-  return new User({
-    username,
-    created: Date.now()
-  }).save()
-}
-
-async function findUser(username) {
-  return await User.findOne({ username })
-}
-
-;(async () => {
-  const connector = mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true})
-  const username = process.argv[2].split('=')[1]
-
-  let user = await connector.then(async () => {
-    return findUser(username)
-  })
-
-  if (!user) {
-    user = await createUser(username)
-  }
-
-  console.log(user)
-  process.exit(0)
-})()
-
-//var username= process.argv[2].split('=')[1];
-//console.log('Hello, ', username);
-console.log(mongoose.connection.readyState); 
-
-
-
-//userSchema.js
-
-const mongoose = require('mongoose');
-
-const userSchema = new mongoose.Schema({
-  username: {
-    type: String,
-    required: [true, 'Username is required']
-  },
-  created: {
-    type: Date,
-    required: [true, 'Created date is required']
-  }
-})
-
-module.exports = userSchema;
-
-
-*/
