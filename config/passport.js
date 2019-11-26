@@ -20,7 +20,7 @@ passport.use('local.signup', new LocalStrategy({
     var name = req.body.name;
     req.checkBody('name', 'Invalid email').notEmpty();
     req.checkBody('email', 'Invalid email').notEmpty().isEmail();
-    req.checkBody('password', 'Invalid password').notEmpty().isLength({min: 4});
+    req.checkBody('password', 'Invalid password: Should be at least 4 characters').notEmpty().isLength({min: 4});
     var errors= req.validationErrors();
     if(errors) {
         var messages= [];
@@ -58,7 +58,7 @@ passport.use('local.signin', new LocalStrategy({
     passReqToCallback: true
 }, function(req, email, password, done) {
     req.checkBody('email', 'Invalid email').notEmpty().isEmail();
-    req.checkBody('password', 'Invalid password').notEmpty();
+    req.checkBody('password', 'Invalid password: Can not be empty').notEmpty();
     var errors= req.validationErrors();
     if(errors) {
         var messages= [];
