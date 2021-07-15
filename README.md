@@ -1,5 +1,7 @@
 # Custore
-CSIS 4280 Project: A online collectibles store using technologies- ExpressJS, NodeJS and MongoDB
+CSIS 4280 Project: A online collectibles store using technologies- ExpressJS, NodeJS and MongoDB <br>
+
+![custore](custore.gif)
 
 Packages installed: 
 - Node.js- JavaScript runtime environment
